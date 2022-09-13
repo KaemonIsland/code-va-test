@@ -33,3 +33,5 @@ spec:
   subcomponentOf: lighthouse-developer-portal-monorepo
   providesApis:
     - hello-world
+  consumesApis:
+    - hello-world
