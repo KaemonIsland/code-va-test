@@ -31,3 +31,5 @@ spec:
   lifecycle: experimental
   system: lighthouse-developer-portal
   subcomponentOf: lighthouse-developer-portal-monorepo
+  providesApis:
+    - hello-world
