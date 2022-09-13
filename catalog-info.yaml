@@ -32,4 +32,4 @@ spec:
   system: lighthouse-developer-portal
   subcomponentOf: lighthouse-developer-portal-monorepo
   providesApis:
-    - hello-world
+    - hello-world-with-relations
