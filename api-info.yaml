@@ -8,6 +8,8 @@ metadata:
 spec:
   type: grpc
   lifecycle: deprecated
+  apiConsumedBy:
+    - frontend
   owner: team-c
   definition: |
     // Copyright 2015 gRPC authors.
