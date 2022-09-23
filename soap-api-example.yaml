@@ -1,20 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: soap-api-example
-  description: Hello World example for gRPC
-  tags:
-  - lighthouse-developer-portal-test-set
+  annotations:
+    wsdl: https://eio-soap-sample.herokuapp.com/ws/countries.wsdl
+  name: soap-example
+  title: SOAP Example
 spec:
   type: soap
-  lifecycle: deprecated
-  owner: team-k
-  definition: |
-    <?xml version="1.0" encoding="utf-8"?>
-    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-     <soap:Body>
-      <IsValidISBN10 xmlns="http://webservices.daehosting.com/ISBN">
-       <sISBN>0-19-852663-6</sISBN>
-      </IsValidISBN10>
-     </soap:Body>
-    </soap:Envelope>
+  lifecycle: experimental
+  owner: lighthouse-bandicoot
+  system: lighthouse-internal-developer-hub
+  definition:
+    $text: https://eio-soap-sample.herokuapp.com/ws/countries.wsdl
