@@ -6,7 +6,7 @@ metadata:
   tags:
   - lighthouse-developer-portal-test-set
 spec:
-  type: grpc
+  type: soap
   lifecycle: deprecated
   owner: team-k
   definition: |
