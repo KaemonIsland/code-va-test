@@ -3,7 +3,7 @@ kind: API
 metadata:
   annotations:
     wsdl: https://eio-soap-sample.herokuapp.com/ws/countries.wsdl
-  name: soap-example
+  name: soap-example-example
   title: SOAP Example
 spec:
   type: soap
