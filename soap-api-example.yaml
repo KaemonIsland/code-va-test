@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   annotations:
-    wsdl: https://eio-soap-sample.herokuapp.com/ws/countries.wsdl
+    wsdl: http://webservices.daehosting.com/services/isbnservice.wso?WSDL
   name: testing-soap
   title: TESTING SOAP
 spec:
@@ -11,4 +11,4 @@ spec:
   owner: lighthouse-bandicoot
   system: lighthouse-internal-developer-hub
   definition:
-    $text: https://eio-soap-sample.herokuapp.com/ws/countries.wsdl
+    $text: http://webservices.daehosting.com/services/isbnservice.wso?WSDL
