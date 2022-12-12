@@ -1,44 +1,101 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: hello-world-without-relations
-  description: Hello World example for gRPC
+  name: hello-world-without-relations-soap
+  description: Hello World example for SOAP
   tags:
   - lighthouse-developer-portal-test-set
 spec:
-  type: grpc
+  type: soap
   lifecycle: deprecated
   owner: team-c
   definition: |
-    // Copyright 2015 gRPC authors.
-    //
-    // Licensed under the Apache License, Version 2.0 (the "License");
-    // you may not use this file except in compliance with the License.
-    // You may obtain a copy of the License at
-    //
-    //     http://www.apache.org/licenses/LICENSE-2.0
-    //
-    // Unless required by applicable law or agreed to in writing, software
-    // distributed under the License is distributed on an "AS IS" BASIS,
-    // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    // See the License for the specific language governing permissions and
-    // limitations under the License.
-    syntax = "proto3";
-    option java_multiple_files = true;
-    option java_package = "io.grpc.examples.helloworld";
-    option java_outer_classname = "HelloWorldProto";
-    option objc_class_prefix = "HLW";
-    package helloworld;
-    // The greeting service definition.
-    service Greeter {
-      // Sends a greeting
-      rpc SayHello (HelloRequest) returns (HelloReply) {}
-    }
-    // The request message containing the user's name.
-    message HelloRequest {
-      string name = 1;
-    }
-    // The response message containing the greetings
-    message HelloReply {
-      string message = 1;
-    }
+    <?xml version="1.0" encoding="UTF-8"?>
+    <wsdl:definitions targetNamespace="http://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+      <wsdl:types>
+        <s:schema elementFormDefault="qualified" targetNamespace="http://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries">
+          <s:element name="getCountries">
+            <s:complexType>
+              <s:sequence>
+                <s:element maxOccurs="1" minOccurs="0" name="objRequest" type="tns:countriesRequest"/>
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+          <s:complexType name="countriesRequest">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="0" name="companyCode" type="s:string"/>
+              <s:element maxOccurs="1" minOccurs="1" name="allCountries" type="s:boolean"/>
+            </s:sequence>
+          </s:complexType>
+          <s:element name="getCountriesResponse">
+            <s:complexType>
+              <s:sequence>
+                <s:element maxOccurs="1" minOccurs="0" name="getCountriesResult" type="tns:countriesResponse"/>
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+          <s:complexType name="countriesResponse">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="0" name="errorCode" type="s:string"/>
+              <s:element maxOccurs="1" minOccurs="0" name="countries">
+                <s:complexType>
+                  <s:sequence>
+                    <s:element ref="s:schema"/>
+                    <s:any/>
+                  </s:sequence>
+                </s:complexType>
+              </s:element>
+            </s:sequence>
+          </s:complexType>
+        </s:schema>
+      </wsdl:types>
+      <wsdl:message name="getCountriesSoapIn">
+        <wsdl:part name="parameters" element="tns:getCountries">
+        </wsdl:part>
+      </wsdl:message>
+      <wsdl:message name="getCountriesSoapOut">
+        <wsdl:part name="parameters" element="tns:getCountriesResponse">
+        </wsdl:part>
+      </wsdl:message>
+      <wsdl:portType name="getListCountriesSoap">
+        <wsdl:operation name="getCountries">
+          <wsdl:input message="tns:getCountriesSoapIn">
+        </wsdl:input>
+          <wsdl:output message="tns:getCountriesSoapOut">
+        </wsdl:output>
+        </wsdl:operation>
+      </wsdl:portType>
+      <wsdl:binding name="getListCountriesSoap12" type="tns:getListCountriesSoap">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getCountries">
+          <soap12:operation soapAction="http://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries/getCountries" style="document"/>
+          <wsdl:input>
+            <soap12:body use="literal"/>
+          </wsdl:input>
+          <wsdl:output>
+            <soap12:body use="literal"/>
+          </wsdl:output>
+        </wsdl:operation>
+      </wsdl:binding>
+      <wsdl:binding name="getListCountriesSoap" type="tns:getListCountriesSoap">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getCountries">
+          <soap:operation soapAction="http://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries/getCountries" style="document"/>
+          <wsdl:input>
+            <soap:body use="literal"/>
+          </wsdl:input>
+          <wsdl:output>
+            <soap:body use="literal"/>
+          </wsdl:output>
+        </wsdl:operation>
+      </wsdl:binding>
+      <wsdl:service name="getListCountries">
+        <wsdl:port name="getListCountriesSoap" binding="tns:getListCountriesSoap">
+          <soap:address location="http://DESKTOP-DREAVQ4:8088/mockgetListCountriesSoap"/>
+        </wsdl:port>
+        <wsdl:port name="getListCountriesSoap12" binding="tns:getListCountriesSoap12">
+          <soap12:address location="https://www.jimpisoft.pt/Rentway_Reservations_WS/getCountries.asmx"/>
+        </wsdl:port>
+      </wsdl:service>
+    </wsdl:definitions>
+
