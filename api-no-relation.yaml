@@ -1,6 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
+  annotations:
+    wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
   name: hello-world-without-relations-soap
   description: Hello World example for SOAP
   tags:
