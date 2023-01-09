@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   annotations:
-    wsdl: http://localhost:8088/mockgetListCountriesSoap?WSDL
+    wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
   name: testing-soap
   title: TESTING SOAP
 spec:
@@ -11,4 +11,4 @@ spec:
   owner: lighthouse-bandicoot
   system: lighthouse-internal-developer-hub
   definition:
-    $text: http://localhost:8088/mockgetListCountriesSoap?WSDL
+    $text: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
