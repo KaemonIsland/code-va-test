@@ -3,8 +3,8 @@ kind: API
 metadata:
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
-  name: testing-soap
-  title: TESTING SOAP
+  name: Number to Words
+  title: Number to Words
 spec:
   type: soap
   lifecycle: experimental
