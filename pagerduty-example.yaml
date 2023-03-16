@@ -4,7 +4,7 @@ metadata:
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
     pagerduty.com/integration-key: edf42287285e440fc012cced0e9a0bf4
-    datadog/monitor-id: 113508
+    datadog/monitor-id: '113508'
   name: pagerduty-example
   description: Example API for pagerduty and http check
   tags:
