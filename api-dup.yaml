@@ -3,6 +3,8 @@ kind: API
 metadata:
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
+    datadog/production-monitor-id: '139178'
+    datadog/sandbox-monitor-id: '139178'
   name: api-dup-example
   description: Example API for testing new features.
   tags:
