@@ -6,9 +6,8 @@ metadata:
     pagerduty.com/integration-key: edf42287285e440fc012cced0e9a0bf4
     datadog/production-monitor-id: '139178'
     datadog/sandbox-monitor-id: '139178'
-    datadoghq.com/dashboard-url: https://app.ddog-gov.com/sb/9d9fea96-bc1e-11ec-978a-da7ad0900007-20b895dfe692fd0622e3397db371b9ed
   name: pagerduty-example
-  description: Example API for pagerduty and http check
+  description: Example API for pagerduty and API Status
   tags:
   - lighthouse-developer-portal-test-set
 spec:
