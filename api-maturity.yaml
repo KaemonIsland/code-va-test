@@ -3,62 +3,62 @@ kind: API
 metadata:
   api-attributes:
     doc:
-      - descriptor: no-doc
-      - descriptor: non-pub
-      - descriptor: leg-form
-      - descriptor: va-net
-      - descriptor: pub
-      - descriptor: oas
+      - no-doc
+      - non-pub
+      - leg-form
+      - va-net
+      - pub
+      - oas
     arch:
-      - descriptor: soap
-      - descriptor: rest
-      - descriptor: graphql
-      - descriptor: rpc
+      - soap
+      - rest
+      - graphql
+      - rpc
     lower:
-      - descriptor: approve
-      - descriptor: more-than-2
-      - descriptor: less-than-2
-      - descriptor: auto
+      - approve
+      - more-than-2
+      - less-than-2
+      - auto
     prod:
-      - descriptor: approve
-      - descriptor: more-than-2
-      - descriptor: less-than-2
-      - descriptor: immediate
+      - approve
+      - more-than-2
+      - less-than-2
+      - immediate
     perf:
-      - descriptor: not-avail
-      - descriptor: p95-greater
-      - descriptor: p95-less
-      - descriptor: p99-less
+      - not-avail
+      - p95-greater
+      - p95-less
+      - p99-less
     reli:
-      - descriptor: not-avail
-      - descriptor: no-follow
-      - descriptor: slo-exists
-      - descriptor: slo-99
-      - descriptor: follow
+      - not-avail
+      - no-follow
+      - slo-exists
+      - slo-99
+      - follow
     status:
-      - descriptor: not-avail
-      - descriptor: no-metrics
-      - descriptor: no-logs
-      - descriptor: status-exists
-      - descriptor: status-historic
-      - descriptor: logs
-      - descriptor: metrics
+      - not-avail
+      - no-metrics
+      - no-logs
+      - status-exists
+      - status-historic
+      - logs
+      - metrics
     sup:
-      - descriptor: not-sup
-      - descriptor: not-main
-      - descriptor: sup-no-team
-      - descriptor: maint-limited
-      - descriptor: contact
-      - descriptor: sup-with-team
-      - descriptor: maint-active
+      - not-sup
+      - not-main
+      - sup-no-team
+      - maint-limited
+      - contact
+      - sup-with-team
+      - maint-active
     host:
-      - descriptor: no-cloud
-      - descriptor: cloud-manual
-      - descriptor: cloud-auto
+      - no-cloud
+      - cloud-manual
+      - cloud-auto
     test:
-      - descriptor: no-avail
-      - descriptor: test-avail
-      - descriptor: test-avail-doc
+      - no-avail
+      - test-avail
+      - test-avail-doc
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
     datadog/production-monitor-id: '139178'
