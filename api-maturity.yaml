@@ -3,61 +3,62 @@ kind: API
 metadata:
   api-attributes:
     doc:
-      - complete: true
-        descriptor: no-doc
-      - complete: false
-        descriptor: non-stan
-      - complete: true
-        descriptor: pub
+      - descriptor: no-doc
+      - descriptor: non-pub
+      - descriptor: leg-form
+      - descriptor: va-net
+      - descriptor: pub
+      - descriptor: oas
     arch:
-      - complete: true
-        descriptor: soap
+      - descriptor: soap
+      - descriptor: rest
+      - descriptor: graphql
+      - descriptor: rpc
     lower:
-      - complete: true
-        descriptor: man-config
-      - complete: false
-        descriptor: less-than-2
-      - complete: true
-        descriptor: auto
+      - descriptor: approve
+      - descriptor: more-than-2
+      - descriptor: less-than-2
+      - descriptor: auto
     prod:
-      - complete: true
-        descriptor: approve
-      - complete: true
-        descriptor: immediate
-      - complete: true
-        descriptor: less-than-2
+      - descriptor: approve
+      - descriptor: more-than-2
+      - descriptor: less-than-2
+      - descriptor: immediate
     perf:
-      - complete: true
-        descriptor: not-avail
-      - complete: true
-        descriptor: P95-less
-    slo:
-      - complete: false
-        descriptor: not-avail
-      - complete: true
-        descriptor: slo-exists
+      - descriptor: not-avail
+      - descriptor: P95-greater
+      - descriptor: P95-less
+      - descriptor: P90-less
+    reli:
+      - descriptor: not-avail
+      - descriptor: no-follow
+      - descriptor: slo-exists
+      - descriptor: slo-99
+      - descriptor: follow
     status:
-      - complete: true
-        descriptor: status-exists
-      - complete: true
-        descriptor: status-historic
+      - descriptor: not-avail
+      - descriptor: no-metrics
+      - descriptor: no-logs
+      - descriptor: status-exists
+      - descriptor: status-historic
+      - descriptor: logs
+      - descriptor: metrics
     sup:
-      - complete: false
-        descriptor: not-sup
-      - complete: false
-        descriptor: not-main
-      - complete: true
-        descriptor: sup-no-team
+      - descriptor: not-sup
+      - descriptor: not-main
+      - descriptor: sup-no-team
+      - descriptor: maint-limited
+      - descriptor: contact
+      - descriptor: sup-with-team
+      - descriptor: maint-active
     host:
-      - complete: true
-        descriptor: no-cloud
-      - complete: true
-        descriptor: cloud-auto
+      - descriptor: no-cloud
+      - descriptor: cloud-manual
+      - descriptor: cloud-auto
     test:
-      - complete: true
-        descriptor: no-avail
-      - complete: true
-        descriptor: test-avail-users
+      - descriptor: no-avail
+      - descriptor: test-avail
+      - descriptor: test-avail-doc
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
     datadog/production-monitor-id: '139178'
