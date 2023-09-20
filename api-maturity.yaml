@@ -28,7 +28,7 @@ metadata:
       - descriptor: not-avail
       - descriptor: p95-greater
       - descriptor: p95-less
-      - descriptor: p90-less
+      - descriptor: p99-less
     reli:
       - descriptor: not-avail
       - descriptor: no-follow
