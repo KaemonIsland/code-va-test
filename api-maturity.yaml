@@ -26,9 +26,9 @@ metadata:
       - descriptor: immediate
     perf:
       - descriptor: not-avail
-      - descriptor: P95-greater
-      - descriptor: P95-less
-      - descriptor: P90-less
+      - descriptor: p95-greater
+      - descriptor: p95-less
+      - descriptor: p90-less
     reli:
       - descriptor: not-avail
       - descriptor: no-follow
