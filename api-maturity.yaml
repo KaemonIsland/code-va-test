@@ -9,11 +9,6 @@ metadata:
       - va-net
       - pub
       - oas
-    arch:
-      - soap
-      - rest
-      - graphql
-      - rpc
     lower:
       - approve
       - more-than-2
@@ -24,17 +19,6 @@ metadata:
       - more-than-2
       - less-than-2
       - immediate
-    perf:
-      - not-avail
-      - p95-greater
-      - p95-less
-      - p99-less
-    reli:
-      - not-avail
-      - no-follow
-      - slo-exists
-      - slo-99
-      - follow
     status:
       - not-avail
       - no-metrics
