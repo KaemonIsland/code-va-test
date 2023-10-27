@@ -17,11 +17,8 @@ spec:
   owner: team-c
   definition: |
    <html>
-
     <head><link rel="alternate" type="text/xml" href="/xml/tempconvert.asmx?disco" />
-
     <style type="text/css">
-    
 		BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; }
 		#content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; }
 		A:link { color: #336699; font-weight: bold; text-decoration: underline; }
@@ -45,58 +42,27 @@ spec:
 		.frmtext { font-family: Verdana; font-size: .7em; margin-top: 8px; margin-bottom: 0px; margin-left: 32px; }
 		.frmInput { font-family: Verdana; font-size: 1em; }
 		.intro { margin-left: -15px; }
-           
     </style>
-
     <title>
     	TempConvert Web Service
     </title></head>
-    
       <body>
-    
         <div id="content">
-    
           <p class="heading1">TempConvert</p><br>
-    
-          
-    
           <span>
-    
               <p class="intro">The following operations are supported.  For a formal definition, please review the <a href="tempconvert.asmx?WSDL">Service Description</a>. </p>
-              
-              
                   <ul>
-                
                   <li>
                     <a href="tempconvert.asmx?op=CelsiusToFahrenheit">CelsiusToFahrenheit</a>
-                    
-                    
                   </li>
                   <p>
-                
                   <li>
                     <a href="tempconvert.asmx?op=FahrenheitToCelsius">FahrenheitToCelsius</a>
-                    
-                    
                   </li>
                   <p>
-                
                   </ul>
-                
           </span>
-    
-          
-          
-    
         <span>
-            
         </span>
-        
-          
-    
-          
-    
-        
       </body>
     </html>
-
