@@ -4,45 +4,20 @@ metadata:
   api-attributes:
     test:
       - no-avail
-      - test-avail
-      - test-avail-doc
-    lower:
-      - approve
-      - more-than-2
-      - less-than-2
-      - auto
     doc:
       - no-doc
       - non-pub
-      - leg-form
-      - va-net
       - pub
       - oas
     sup:
       - not-sup
       - not-main
-      - sup-no-team
-      - maint-limited
-      - contact
-      - sup-with-team
       - maint-active
-    host:
-      - no-cloud
-      - cloud-manual
-      - cloud-auto
     prod:
       - approve
-      - more-than-2
-      - less-than-2
       - immediate
     status:
       - not-avail
-      - no-metrics
-      - no-logs
-      - status-exists
-      - status-historic
-      - logs
-      - metrics
   annotations:
     wsdl: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?wsdl
     datadog/production-monitor-id: '139178'
