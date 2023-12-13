@@ -9,7 +9,7 @@ metadata:
     hub.lighthouse.va.gov/api-id: appeals
   name: intended-consumer
   description: Example API for testing new features.
-  intended-consumer: Internal VA developers; other intended user type names here; sample filler text to show that this fieild should cap at two full lines worth of text if there are various user types.
+  intendedConsumer: Internal VA developers; other intended user type names here; sample filler text to show that this fieild should cap at two full lines worth of text if there are various user types.
   tags:
   - lighthouse-developer-portal-test-set
 spec:
