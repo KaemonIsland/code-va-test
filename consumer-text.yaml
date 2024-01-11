@@ -12,7 +12,7 @@ metadata:
   tags:
   - lighthouse-developer-portal-test-set
 spec:
-  type: soap
+  type: grpc
   lifecycle: deprecated
   owner: team-c
   definition: |
