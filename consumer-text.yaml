@@ -2,7 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   annotations:
-    wsdl: https://www.w3schools.com/xml/tempconvert.asmx?%20WSDL
     datadog/production-monitor-id: '139178'
     datadog/sandbox-monitor-id: '139178'
     pagerduty.com/integration-key: edf42287285e440fc012cced0e9a0bf4
