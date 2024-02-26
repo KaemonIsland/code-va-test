@@ -23,8 +23,8 @@ metadata:
   annotations:
     github.com/project-slug: department-of-veterans-affairs/lighthouse-developer-portal
     datadoghq.com/site: datadoghq.com
-    datadoghq.com/dashboard-url: https://p.datadoghq.com/sb/dq828b4kr813cbhm-2a8ddd0f38eb4f4f73186c46b05e6d38
-    datadoghq.com/graph-token: 9764f1d904a737ccea19b233d1d3886a97dff9a3d83af96ac4824f13ae95f48a
+    datadoghq.com/dashboard-url: https://app.ddog-gov.com/sb/9d9fea96-bc1e-11ec-978a-da7ad0900007-4f74d817698ca3efedf0884eab741dcf
+    datadoghq.com/graph-token: f845636ea93cd41bdc09c937f9f7ccd3f8e10246e32c318990e3608c09ca6c0d
 spec:
   type: openapi
   owner: lighthouse-bandicoot
