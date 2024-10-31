@@ -3,6 +3,13 @@ kind: API
 metadata:
   name: hello-world-with-relations
   description: Hello World example for gRPC
+  links:
+    - url: https://github.com/department-of-veterans-affairs/code-va
+      title: Code VA
+      icon: dashboard
+    - url: https://github.com/department-of-veterans-affairs/code-va-docs
+      title: Code VA Docs
+      icon: dashboard
   tags:
   - lighthouse-developer-portal-test-set
 spec:
